@@ -1,0 +1,332 @@
+#sond {
+  font-family: "Trebuchet MS";
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.fieldLeg {
+  text-align: center;
+  font-weight: bold;
+}
+
+#adm {
+  justify-content: flex-end;
+  font-variant-caps: small-caps;
+  top: 75px;
+  position: relative;
+  width: 300px;
+}
+
+#adminCon {
+  display: flex;
+}
+
+.catQuePre {
+  text-align: center;
+  font-size: 30px;
+}
+
+#inguilde, #qSetUtil {
+  text-align: left;
+}
+
+.forwa {
+  z-index: auto;
+  right: 25%;
+  font-variant-caps: small-caps;
+  background-color: green;
+  color: white;
+  font-size: 30px;
+  display: inline;
+  position: absolute;
+  border-color: #330033;
+  border-width: 4px;
+  border-style: dashed;
+  margin: 25px;
+}
+
+.forwa:hover {
+  border-color: #330033;
+  border-style: solid;
+  border-width: 3px;
+}
+
+.backa {
+  font-variant-caps: small-caps;
+  background-color: red;
+  color: white;
+  font-size: 30px;
+  display: inline;
+  position: absolute;
+  border-color: #330033;
+  border-width: 4px;
+  border-style: dashed;
+  left: 25%;
+  margin: 25px;
+}
+
+.backa:hover {
+  border-color: #330033;
+  border-style: solid;
+  border-width: 3px;
+}
+
+.fieldUtil select {
+  font-size: 16px;
+}
+
+.fieldUtil input {
+  font-size: 16px;
+}
+
+.rowDecision {
+  color: grey;
+}
+
+.box {
+  display: inline;
+  position: relative;
+  padding-right: 30px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  text-align: center;
+}
+
+.boxVeryNo {
+  padding-right: 50px;
+}
+
+.boxNo, .boxYes {
+  padding-right: 42px;
+}
+
+.boxLittleNo, .boxNeutral, .boxLittleYes {
+  padding-right: 34px;
+}
+
+.box:hover input ~ .NEUTRAL {
+  background-color: #ccc;
+}
+
+.box:hover input ~ .veryNO, .box:hover input ~ .NO, .box:hover input ~ .littleNO {
+  background-color: #be0000;
+}
+
+.box:hover input ~ .veryYES, .box:hover input ~ .YES, .box:hover input ~ .littleYES {
+  background-color: #00be00;
+}
+
+.box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+.NO, .YES {
+  height: 32px;
+  width: 32px;
+}
+
+.veryNO, .veryYES {
+  height: 40px;
+  width: 40px;
+}
+
+.littleNO, .littleYES, .NEUTRAL {
+  height: 24px;
+  width: 24px;
+}
+
+.veryNO, .NO, .littleNO {
+  background-color: red;
+}
+
+.veryYES, .YES, .littleYES {
+  background-color: green;
+}
+
+.NEUTRAL {
+  background-color: gray;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 4px;
+  left: 4px;
+  border-radius: 50%;
+  background: white;
+}
+
+.box input:checked ~ .checkmark:after {
+  display: none;
+}
+
+.veryNO:after, .veryYES:after {
+  width: 32px;
+  height: 32px;
+}
+
+.NO:after, .YES:after {
+  width: 24px;
+  height: 24px;
+}
+
+.littleNO:after, .littleYES:after, .NEUTRAL:after {
+  width: 16px;
+  height: 16px;
+}
+
+/*  Page Résultat  */
+
+.resTit {
+  font-family: "Trebuchet MS";
+  display: flex;
+  float: left;
+  text-align: justify;
+}
+
+#res{
+  font-family: "Trebuchet MS";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  width: 95%;
+  text-align: justify;
+}
+
+#containerCanvas{
+  display: flex;
+  flex-direction: row;
+}
+      
+#toile{
+  display: flex;
+  width: 600px;
+  height: 600px;
+}
+  
+#barre{
+  display: flex;
+  width: 600px;
+  height: 300px;
+}
+      
+#troll{
+  display: flex;
+  width: 600px; 
+  height: 300px;
+}
+
+div#canv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Page arrivée Admin */
+#menuAdmin {
+  font-family: "Trebuchet MS";
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: x-large;
+  padding: 5px;
+}
+
+label.Admin {
+  align-self: flex-start;
+  font-size: medium;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+form.Admin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Boutons retours */
+
+.BoutonUtile {
+  font-size: x-large;
+}
+
+/* Afficher les détails d'une question */
+
+td.questionAdmin {
+  text-align: center;
+}
+
+div.displayQuestion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a.questionAdmin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Afficher le nombre d'utilisateur et leur role moyen */
+
+td.roles{
+  font-weight: bold;
+}
+ 
+/* Les question affectant le Role */
+
+div#questionbyrole {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Affiche toutes les questions */ 
+
+#allQuestion {
+  margin:  0%;
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  text-align: justify;
+}
+
+/* Affiche toutes les catégories */
+
+div#questionbycate{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Créer Modifier une Catégorie ou Question*/
+
+.fieldCreate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.roleImg {
+  width: 100px;
+  height: 100px;
+}
